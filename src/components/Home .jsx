@@ -6,7 +6,14 @@ const Home  = () => {
   return (
     <main className='main-container'>
         <div className="main-title">
-            <h3>DASHBOARD</h3>
+            
+            
+                <a href='/dashboard' style={{color:"#ffff", textDecoration:'none', fontSize:20}}>
+                   DASHBOARD  
+                    </a>
+                
+              
+            
         </div>
 
         {/* cards */}
