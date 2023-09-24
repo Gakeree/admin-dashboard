@@ -45,6 +45,8 @@ const Home  = () => {
             <h1>42</h1>
         </div>
         </div>
+
+
         {/* charts */}
         <div className="charts">
             
