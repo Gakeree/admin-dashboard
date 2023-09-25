@@ -8,6 +8,7 @@ import Products from './pages/Products'
 import Inventory from './pages/Inventory'
 import Reports from './pages/Reports'
 import Settings from './pages/Settings'
+import Alerts from './pages/Alerts'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path='/inventory' element={<Inventory />} />
           <Route path='/reports' element={<Reports />} />
           <Route path='/settings' element={<Settings />} />
+          <Route path='/alerts' element={<Alerts />} />
         </Routes>
 
       </BrowserRouter>

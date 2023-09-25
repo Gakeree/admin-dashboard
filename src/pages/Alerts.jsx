@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Header from '../components/Header'
 import Sidebar from '../components/sidebar'
 
-const Customers = () => {
+const Alerts = () => {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
 
   const OpenSidebar = () => {
@@ -13,11 +13,10 @@ const Customers = () => {
     <div className='grid-container'> 
     <Header OpenSidebar={OpenSidebar} />
   <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
-  <h3>Customers</h3>
+  <h3>Alerts</h3>
 
 </div>
   )
 }
 
-
-export default Customers
+export default Alerts

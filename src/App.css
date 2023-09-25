@@ -1,9 +1,13 @@
  body{
     margin: 0;
     padding: 0;
-    background-color: #1d2634;
+    background-color: #ffff;
     color: #9e9ea4;
     font-family:  'Courier New', Courier, monospace;
+    
+ }
+ body::-webkit-scrollbar{
+  display: none;
  }
  /* icons */
  .icon_header {
@@ -24,7 +28,7 @@
 
  .grid-container{
     display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
+    /* grid-template-columns: 260px 1fr 1fr 1fr; */
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas: 
     'sidebar header header header'
@@ -59,6 +63,11 @@
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    
+  }
+  /* hide scrollbar but it styill works */
+  #sidebar::-webkit-scrollbar{
+    display: none;
   }
   
   .sidebar-title {
@@ -112,6 +121,7 @@
   .sidebar-responsive {
     display: inline !important;
     position: absolute;
+
     /*
       we want the z-index of the sidebar higher so that
       the charts are not showing over the sidebar 
@@ -132,6 +142,12 @@
   overflow-y: auto;
   padding: 20px 20px;
   color: rgba(255, 255, 255, 0.95);
+ 
+ 
+}
+
+.main-container::-webkit-scrollbar{
+  display: none;
 }
 
 .main-title {
@@ -202,6 +218,7 @@
   #sidebar {
     display: none;
   }
+
 
   .menu-icon {
     display: inline;
